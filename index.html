@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Canada Probability Index</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: #080808; color: #e5e5e5; font-family: 'Georgia', serif; min-height: 100vh; }
+.header { border-bottom: 1px solid #1a1a1a; padding: 16px 32px; display: flex; justify-content: space-between; align-items: center; }
+.logo { font-size: 12px; letter-spacing: 0.2em; color: #c8a96e; text-transform: uppercase; }
+.live { font-size: 10px; color: #444; letter-spacing: 0.1em; }
+.container { max-width: 800px; margin: 0 auto; padding: 60px 32px; }
+.eyebrow { font-size: 11px; color: #c8a96e; letter-spacing: 0.2em; text-transform: uppercase; margin-bottom: 16px; }
+h1 { font-size: 36px; color: #fff; line-height: 1.2; margin-bottom: 16px; font-weight: normal; }
+.sub { font-size: 14px; color: #555; line-height: 1.7; margin-bottom: 48px; max-width: 520px; }
+.table-label { font-size: 10px; color: #444; letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 12px; }
+table { width: 100%; border-collapse: collapse; margin-bottom: 12px; }
+th { font-size: 10px; color: #444; letter-spacing: 0.12em; text-transform: uppercase; padding: 10px 16px; text-align: left; border-bottom: 1px solid #1a1a1a; background: #0d0d0d; }
+th:not(:first-child) { text-align: center; }
+td { padding: 16px; border-bottom: 1px solid #111; font-size: 14px; }
+td:not(:first-child) { text-align: center; font-family: 'Courier New', monospace; }
+.source-name { color: #ccc; font-size: 13px; }
+.source-sub { color: #444; font-size: 10px; margin-top: 3px; }
+.composite td { border-top: 1px solid #1a1a1a; }
+.composite .source-name { color: #c8a96e; font-weight: bold; }
+.cut { color: #ef4444; }
+.hold { color: #22c55e; }
+.hike { color: #f59e0b; }
+.dim { color: #444; }
+.divergence { background: #0d0d18; border: 1px solid #222244; border-radius: 6px; padding: 12px 16px; font-size: 12px; color: #818cf8; margin-bottom: 48px; }
+.methodology { border: 1px solid #1a1a1a; border-radius: 6px; padding: 20px 24px; background: #0a0a0a; }
+.methodology-label { font-size: 10px; color: #444; letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 10px; }
+.methodology p { font-size: 12px; color: #555; line-height: 1.8; }
+.footer-line { margin-top: 14px; padding-top: 14px; border-top: 1px solid #111; display: flex; justify-content: space-between; font-size: 10px; color: #333; }
+.timestamp { font-size: 11px; color: #333; margin-top: 8px; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="logo">⬡ Canada Probability Index</div>
+  <div class="live">Updated March 16, 2026 — 11:45 PM ET</div>
+</div>
+
+<div class="container">
+
+  <div class="eyebrow">Bank of Canada · March 18, 2026</div>
+  <h1>What do markets predict about Wednesday's rate decision?</h1>
+  <p class="sub">The Canada Probability Index aggregates prediction market signals and compares them with institutional bond market expectations into one transparent reference.</p>
+
+  <div class="table-label">Source Comparison</div>
+  <table>
+    <thead>
+      <tr>
+        <th>Source</th>
+        <th>Cut</th>
+        <th>Hold</th>
+        <th>Hike</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <div class="source-name">Prediction Markets</div>
+          <div class="source-sub">Kalshi event contracts</div>
+        </td>
+        <td class="cut">12%</td>
+        <td class="hold">84%</td>
+        <td class="hike">4%</td>
+      </tr>
+      <tr>
+        <td>
+          <div class="source-name">Bond Markets</div>
+          <div class="source-sub">OIS / CORRA futures</div>
+        </td>
+        <td class="cut">8%</td>
+        <td class="hold">92%</td>
+        <td class="dim">—</td>
+      </tr>
+      <tr class="composite">
+        <td>
+          <div class="source-name">CPI Composite</div>
+          <div class="source-sub">Weighted average</div>
+        </td>
+        <td class="cut">10%</td>
+        <td class="hold">88%</td>
+        <td class="hike">2%</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="divergence">
+    △ Crowd vs. institution divergence: prediction markets price a rate cut at 12%, bond markets at 8%. A 4pp spread — crowds are slightly more dovish than institutions.
+  </div>
+
+  <div class="methodology">
+    <div class="methodology-label">Methodology</div>
+    <p>The Canada Probability Index aggregates prediction market contract pricing from platforms including Kalshi and compares it with institutional expectations derived from overnight index swap (OIS) and CORRA futures markets. Prediction market probabilities reflect crowd-sourced expectations from participants with real financial stakes. Bond market probabilities reflect institutional positioning by professional traders. The CPI Composite is a weighted average across sources.</p>
+    <div class="footer-line">
+      <span>Canada Probability Index · Independent probability data · Beta</span>
+      <span>Not financial advice · Data for informational purposes only</span>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
